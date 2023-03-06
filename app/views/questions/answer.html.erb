@@ -1,7 +1,16 @@
-<h2><%= @question.capitalize %></h2>
-<p><em>- You</em></p>
-<h2><%= @answer %></h2>
-<p><em>- Your coach</em></p>
+<h1>Stupid Coaching</h1>
 
 
-<p><%= link_to 'Ask a new question', ask_path %></p>
+<div class="wrapper">
+  <div class="alert border-left">
+    <h2><%= @question.capitalize %></h2>
+    <p><em>- You</em></p>
+  </div>
+  <div class='alert alert-warning border-left'>
+    <h2><%= @answer %></h2>
+    <p><em>- Your coach</em></p>
+  </div>
+</div>
+
+
+<p class='text-primary'><%= link_to 'Ask a new question', ask_path %></p>
